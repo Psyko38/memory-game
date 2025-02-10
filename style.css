@@ -1,0 +1,211 @@
+@import url(https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible:regular,italic,700,700italic);
+
+.GridSize button {
+	background-color: red;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Atkinson Hyperlegible;
+}
+
+body {
+	height: 100vh;
+}
+
+.settings {
+	background-color: #152938;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	display: none;
+}
+
+.settings > h1 {
+	color: #fcfcfc;
+}
+
+.btn {
+	display: flex;
+	flex-direction: column;
+	background-color: #fcfcfc;
+	width: 80%;
+	border-radius: 20px;
+	padding: 60px;
+}
+
+.settings button {
+	width: 100%;
+	margin: 15px 8px 15px 8px;
+	color: #fcfcfc;
+	border: 0;
+	background-color: #bcced9;
+	border-radius: 100px;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 32.24px;
+	letter-spacing: 0px;
+	text-align: center;
+}
+
+.settings button.active {
+	background-color: #304859;
+}
+
+.BTN-Grid {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+}
+
+.TT {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24.8px;
+	letter-spacing: 0px;
+}
+
+.btn > button:last-child {
+	background-color: #fda214;
+	font-size: 32px;
+	line-height: 39.68px;
+	text-align: center;
+	padding: 10px;
+}
+
+/*/ ================================================ /*/
+
+.game {
+	background-color: #fcfcfc;
+	width: 100%;
+	height: 100%;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header > p {
+	font-family: Atkinson Hyperlegible;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 49.6px;
+	letter-spacing: 0px;
+}
+
+.header {
+	display: flex;
+}
+
+.header button {
+	margin: 5px;
+	padding: 10px;
+	border: 0;
+	border-radius: 666px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24.8px;
+	letter-spacing: 0px;
+	text-align: center;
+}
+
+.header button:first-child {
+	background-color: #fda214;
+	color: #fcfcfc;
+}
+
+.header button:last-child {
+	background: #dfe7ec;
+	color: #304859;
+}
+
+.Info {
+	margin-top: 100px;
+	height: 10%;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.Info div {
+	background-color: #dfe7ec;
+}
+
+.Info > div {
+	width: 20%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 15px;
+	padding: 0 10px 0 10px;
+}
+
+.Info > div > p:first-child {
+	color: #7191a5;
+	font-family: Atkinson Hyperlegible;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22.32px;
+	letter-spacing: 0px;
+}
+
+.Info > div > p:last-child {
+	color: #304859;
+	font-family: Atkinson Hyperlegible;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 39.68px;
+	letter-spacing: 0px;
+	text-align: right;
+}
+
+.Gride {
+	height: 75vmin;
+	display: grid;
+	gap: 10px;
+	height: 60vmin;
+	width: 60vmin;
+}
+
+.Gride > button {
+	border-radius: 666px;
+	background-color: #304859;
+	border: 0;
+	font-family: Atkinson Hyperlegible;
+	font-weight: 700;
+	font-size: 5vmin;
+	line-height: 69.44px;
+	letter-spacing: 0px;
+	text-align: center;
+	color: transparent;
+}
+
+.Gride > button.active {
+	color: #fcfcfc;
+	background-color: #fda214;
+}
+
+.Gride > button.yes {
+	color: #fcfcfc;
+	background-color: #bcced9;
+}
+
+.center {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
