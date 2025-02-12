@@ -34,7 +34,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	background-color: #fcfcfc;
-	width: 80%;
+	width: 50%;
 	border-radius: 20px;
 	padding: 60px;
 }
@@ -85,6 +85,9 @@ body {
 	background-color: #fcfcfc;
 	width: 100%;
 	height: 100%;
+	display: grid;
+	grid-template-rows: 0.2fr 4fr 1fr;
+	grid-template-columns: 1fr;
 }
 
 .header {
@@ -176,6 +179,7 @@ body {
 }
 
 .Gride > button {
+	display: flex;
 	border-radius: 666px;
 	background-color: #304859;
 	border: 0;
@@ -186,11 +190,23 @@ body {
 	letter-spacing: 0px;
 	text-align: center;
 	color: transparent;
+	align-items: center;
+	justify-content: center;
+}
+
+.Gride > button > img{
+	filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(257deg) brightness(105%) contrast(98%);
+	visibility: hidden;
 }
 
 .Gride > button.active {
 	color: #fcfcfc;
 	background-color: #fda214;
+}
+
+.Gride > button.active> img,
+.Gride > button.yes > img{
+	visibility: unset;
 }
 
 .Gride > button.yes {
@@ -222,6 +238,7 @@ body {
 }
 
 .j {
+	position: relative;
 	padding: 5px;
 	display: flex;
 	flex-direction: column;
@@ -253,6 +270,29 @@ div.j#play {
 	background-color: #fda214;
 }
 
+div.j#play:before {
+content: "";
+position: absolute;
+top: 0;
+left: 50%;
+width: 20px;
+height: 20px;
+background-color:#fda214;
+transform: translate(-50%, -50%) rotate(45deg);
+}
+
+div.j#play::after {
+	content: "CURRENT TURN";
+	letter-spacing: 1rem;
+	position: absolute;
+	text-align: center;
+	top: 100%;
+	left: 50%;
+	width: 100%;
+	height: 20px;
+	transform: translate(-50%, 50%);
+	}
+
 div.j#play > p {
 	color: #fcfcfc;
 }
@@ -270,7 +310,7 @@ div.j#play > p {
 	display: none;
 }
 
-.bg {
+.bg, .bga {
 	background-color: #f2f2f2;
 	border-radius: 15px;
 	padding: 15px;
@@ -356,4 +396,51 @@ div.Winer {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+}
+
+#Menu{
+	background-color: #FDA214;
+	color: #fcfcfc;
+	padding-right: 15px;
+	padding-left: 15px;
+	display: none;
+}
+
+.bga{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.bga > button{
+	background-color: #DFE7EC;
+	color: #304859;
+	border: 0;
+	border-radius: 15px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24.8px;
+	letter-spacing: 0px;
+	text-align: center;
+	padding: 10px;
+}
+
+.bga > button:first-child{
+	background-color: #FDA214;
+	color: #fcfcfc;
+}
+
+@media screen and (max-width : 600px){
+	#Menu{
+		display: unset;
+	}
+
+	#Reset, #NewGame{
+		display: none;
+	}
+
+	.btn{
+		width: 80%;
+	}
+	
 }

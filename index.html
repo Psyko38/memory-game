@@ -1,99 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<div class="settings">
-			<h1>memory</h1>
-			<div class="btn">
-				<div class="Theme">
-					<p class="TT">Select Theme</p>
-					<div class="BTN-Grid">
-						<button class="active">Numbers</button>
-						<button>Icons</button>
-					</div>
-				</div>
-				<div class="NPlayers">
-					<p class="TT">Numbers of Players</p>
-					<div class="BTN-Grid">
-						<button class="active">1</button>
-						<button>2</button>
-						<button>3</button>
-						<button>4</button>
-					</div>
-				</div>
-				<div class="GridSize">
-					<p class="TT">Grid Size</p>
-					<div class="BTN-Grid">
-						<button class="active">4x4</button>
-						<button>6x6</button>
-					</div>
-				</div>
-				<button id="Start">Start Game</button>
-			</div>
-		</div>
-		<div class="game">
-			<div class="header">
-				<p>memory</p>
-				<div class="btnc">
-					<button id="Reset">Restart</button>
-					<button id="NewGame">New Game</button>
-				</div>
-			</div>
-			<div class="center">
-				<div class="Gride">
-					<!--/*/ Gébération Du tablaux /*/-->
-				</div>
-			</div>
 
-			<div class="Info">
-				<div class="p1">
-					<div class="Time">
-						<p>Time</p>
-						<p>0:0</p>
-					</div>
-					<div class="Moves">
-						<p>Moves</p>
-						<p>0</p>
-					</div>
-				</div>
-				<div class="mp">
-					<!--/*/ Gébération De N Joueur /*/-->
-				</div>
-			</div>
-		</div>
-		<div class="pupump">
-			<div class="bg">
-				<h1>Player X Wins!</h1>
-				<p>Game over! Here are the results…</p>
-				<div class="result">
-					<div class="Winer">
-						<p>Player 3 (Winner!)</p>
-						<p>8 Pairs</p>
-					</div>
-					<div>
-						<p>Player 1</p>
-						<p>4 Pairs</p>
-					</div>
-					<div>
-						<p>Player 2</p>
-						<p>3 Pairs</p>
-					</div>
-					<div>
-						<p>Player 4</p>
-						<p>1 Pairs</p>
-					</div>
-				</div>
-				<div class="btnn">
-					<button>Restart</button>
-					<button>Setup New Game</button>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<div class="settings">
+		<h1>memory</h1>
+		<div class="btn">
+			<div class="Theme">
+				<p class="TT">Select Theme</p>
+				<div class="BTN-Grid">
+					<button class="active">Numbers</button>
+					<button>Icons</button>
 				</div>
 			</div>
+			<div class="NPlayers">
+				<p class="TT">Numbers of Players</p>
+				<div class="BTN-Grid">
+					<button class="active">1</button>
+					<button>2</button>
+					<button>3</button>
+					<button>4</button>
+				</div>
+			</div>
+			<div class="GridSize">
+				<p class="TT">Grid Size</p>
+				<div class="BTN-Grid">
+					<button class="active">4x4</button>
+					<button>6x6</button>
+				</div>
+			</div>
+			<button id="Start">Start Game</button>
 		</div>
-	</body>
-	<script src="scipt.js"></script>
+	</div>
+	<div class="game">
+		<div class="header">
+			<p>memory</p>
+			<div class="btnc">
+				<button id="Reset">Restart</button>
+				<button id="NewGame">New Game</button>
+				<button id="Menu">Menu</button>
+			</div>
+		</div>
+		<div class="center">
+			<div class="Gride">
+				<!--/*/ Gébération Du tablaux /*/-->
+			</div>
+		</div>
+
+		<div class="Info">
+			<div class="p1">
+				<div class="Time">
+					<p>Time</p>
+					<p>0:0</p>
+				</div>
+				<div class="Moves">
+					<p>Moves</p>
+					<p>0</p>
+				</div>
+			</div>
+			<div class="mp">
+				<!--/*/ Gébération De N Joueur /*/-->
+			</div>
+		</div>
+	</div>
+	<div class="pupump">
+		<div class="bg">
+			<h1></h1>
+			<p>Game over! Here are the results…</p>
+			<div class="result">
+				<!--/*/ Tabaux générée automatiqment /*/-->
+			</div>
+			<div class="btnn">
+				<button>Restart</button>
+				<button>Setup New Game</button>
+			</div>
+		</div>
+		<div class="bg">
+			<h1>You did it!</h1>
+			<p>Game over! Here’s how you got on…</p>
+			<div class="result">
+				<div>
+					<p>Time Elapsed</p>
+					<p>0:0</p>
+				</div>
+				<div>
+					<p>Moves Taken</p>
+					<p>39 Moves</p>
+				</div>
+			</div>
+			<div class="btnn">
+				<button>Restart</button>
+				<button>Setup New Game</button>
+			</div>
+		</div>
+		<div class="bga">
+			<button>Restart</button>
+			<button>New Game</button>
+			<button>Resume Game</button>
+		</div>
+	</div>
+</body>
+<script src="scipt.js"></script>
+
 </html>
