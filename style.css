@@ -39,6 +39,14 @@ body {
 	padding: 60px;
 }
 
+.settings .btn button:hover {
+	background-color: #6395B8;
+}
+
+#Start:hover{
+	background-color: #fda214;
+}
+
 .settings button {
 	width: 100%;
 	margin: 15px 8px 15px 8px;
@@ -202,6 +210,19 @@ body {
 .Gride > button.active {
 	color: #fcfcfc;
 	background-color: #fda214;
+}
+
+.Gride > button:hover{
+	background-color: #6395B8
+}
+
+
+.Gride > button.active:hover {
+	background-color: #fda214;
+}
+
+.Gride > button.yes:hover{
+	background-color: #bcced9;
 }
 
 .Gride > button.active> img,
